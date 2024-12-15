@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color:#fefcfcf1;
+    --secondary-text-colour: #5d2e06;
+    --accent-color: #dcb7a8;
+    --mask-repeat: #5a1212;
+    --color-pys: #eddfdf;
+
+}
+body{
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    
+}
+p{
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+.container {
+max-width: 1180px;
+margin-inline: auto;
+overflow: hidden;
+}
+nav{
+    background-color: #6e2f2f;
+    box-shadow: 0 0 4px #e6e1e1;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    height: 100;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.company-logo img{
+    width: 120px;
+}
+img{
+    max-width: 120px;
+}
+.nav-link ul {
+gap:16px;
+}
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+color: #c06d6d
+}
+.hover-link:active{
+color: #bb6464;
+}
+
+.nav-item.active{
+  color: #55bcba;
+}
+
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+.news-input{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 2px;
+    border: 3px solid #3f2920;
+    font-family: "Lato", sans-serif;
+}
+.search-button{
+    background-color: var(--accent-color);
+    color: rgb(76, 26, 26);
+    padding: 8px 24px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+}
+.search-button:hover{
+    background-color: var(--primary-text-color);
+}
+main{
+    padding-block: 20px;
+    margin-top: 160px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card{
+    width: 330px;
+    min-height:300px;
+    box-shadow: 0 0 4px #e6e1e1;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #432708c0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px;
+    background-color: #321e04d5;
+    transform: translateY(-2px);
+}
+
+.card-header img{
+width: 200%;
+max-width: 340px;
+height: 140px;
+object-fit: cover;
+}
+
+.card-content{
+    padding: 12px;
+}
+
+.news-source{
+    margin-block: 12px;
+}
